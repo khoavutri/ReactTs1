@@ -1,0 +1,292 @@
+{
+    "data": [
+        {
+            "areaID": 1,
+            "name": "CDHA",
+            "order": 1,
+            "folder": [
+                {
+                    "id": 0,
+                    "areaID": 1,
+                    "name": "0",
+                    "locate": "0",
+                    "areaName": "CDHA",
+                    "areaOder": 1,
+                    "order": 0,
+                    "typeHos": 0,
+                    "modalitys": [
+                        {
+                            "id": 16,
+                            "name": "-",
+                            "order": 0
+                        },
+                        {
+                            "id": 0,
+                            "name": "Default",
+                            "order": 0
+                        },
+                        {
+                            "id": 5,
+                            "name": "PACS-AUTOSEND-JPG",
+                            "order": 0
+                        },
+                        {
+                            "id": 7,
+                            "name": "ROMEXIS_1",
+                            "order": 0
+                        },
+                        {
+                            "id": 23,
+                            "name": "TESTRHMHCM",
+                            "order": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "areaID": 1,
+                    "name": "CT",
+                    "locate": "Tp.HCM, ",
+                    "areaName": "CDHA",
+                    "areaOder": 1,
+                    "order": 1,
+                    "typeHos": 0,
+                    "modalitys": [
+                        {
+                            "id": 56,
+                            "name": "BLADE",
+                            "order": 0
+                        },
+                        {
+                            "id": 4,
+                            "name": "CONE BEAM",
+                            "order": 0
+                        },
+                        {
+                            "id": 57,
+                            "name": "KC_UNITEA_U001",
+                            "order": 0
+                        },
+                        {
+                            "id": 76,
+                            "name": "Máy Test123",
+                            "order": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "areaID": 1,
+                    "name": "X-QUANG",
+                    "locate": "Tp.HCM, ",
+                    "areaName": "CDHA",
+                    "areaOder": 1,
+                    "order": 2,
+                    "typeHos": 0,
+                    "modalitys": [
+                        {
+                            "id": 70,
+                            "name": "Demo Medi+",
+                            "order": 0
+                        },
+                        {
+                            "id": 69,
+                            "name": "HIS",
+                            "order": 0
+                        },
+                        {
+                            "id": 77,
+                            "name": "MÁY TEST222",
+                            "order": 0
+                        },
+                        {
+                            "id": 22,
+                            "name": "QUANH CHOP",
+                            "order": 0
+                        },
+                        {
+                            "id": 6,
+                            "name": "QUANH CHOP 01",
+                            "order": 0
+                        },
+                        {
+                            "id": 8,
+                            "name": "SIRONA-PANOREX",
+                            "order": 0
+                        },
+                        {
+                            "id": 21,
+                            "name": "XQ-10",
+                            "order": 0
+                        },
+                        {
+                            "id": 20,
+                            "name": "XQ-P02",
+                            "order": 0
+                        },
+                        {
+                            "id": 1,
+                            "name": "XQ-P03",
+                            "order": 0
+                        },
+                        {
+                            "id": 14,
+                            "name": "XQ-P04",
+                            "order": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "areaID": 3,
+            "name": "Share",
+            "order": 1,
+            "folder": [
+                {
+                    "id": 14,
+                    "areaID": 3,
+                    "name": "share",
+                    "locate": "",
+                    "areaName": "Share",
+                    "areaOder": 1,
+                    "order": 1,
+                    "typeHos": 2,
+                    "modalitys": [
+                        {
+                            "id": 65,
+                            "name": "ahihi",
+                            "order": 0
+                        },
+                        {
+                            "id": 62,
+                            "name": "Share",
+                            "order": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "areaID": 5,
+            "name": "BV Từ Dũ",
+            "order": 10,
+            "folder": [
+                {
+                    "id": 27,
+                    "areaID": 5,
+                    "name": "Hội chẩn",
+                    "locate": "Hồ Chí Minh",
+                    "areaName": "BV Từ Dũ",
+                    "areaOder": 10,
+                    "order": 1,
+                    "typeHos": 0,
+                    "modalitys": [
+                        {
+                            "id": 79,
+                            "name": "Nội soi",
+                            "order": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "areaID": 2,
+            "name": "Upload",
+            "order": 950,
+            "folder": [
+                {
+                    "id": 13,
+                    "areaID": 2,
+                    "name": "admin-Upload",
+                    "locate": "User admin upload foder",
+                    "areaName": "Upload",
+                    "areaOder": 950,
+                    "order": 0,
+                    "typeHos": 0,
+                    "modalitys": [
+                        {
+                            "id": 61,
+                            "name": "Upload",
+                            "order": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "areaID": 4,
+            "name": "favorite",
+            "order": 1000,
+            "folder": [
+                {
+                    "id": 15,
+                    "areaID": 4,
+                    "name": "Favorite",
+                    "locate": "",
+                    "areaName": "favorite",
+                    "areaOder": 1000,
+                    "order": 0,
+                    "typeHos": 1,
+                    "modalitys": [
+                        {
+                            "id": 63,
+                            "name": "ahi",
+                            "order": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 25,
+                    "areaID": 4,
+                    "name": "Test",
+                    "locate": "Favorite",
+                    "areaName": "favorite",
+                    "areaOder": 1000,
+                    "order": 0,
+                    "typeHos": 1,
+                    "modalitys": [
+                        {
+                            "id": 75,
+                            "name": "TEST",
+                            "order": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "areaID": 6,
+            "name": "PIS",
+            "order": 1000,
+            "folder": [
+                {
+                    "id": 28,
+                    "areaID": 6,
+                    "name": "MEDVN",
+                    "locate": "Favorite",
+                    "areaName": "PIS",
+                    "areaOder": 1000,
+                    "order": 0,
+                    "typeHos": 1,
+                    "modalitys": [
+                        {
+                            "id": 80,
+                            "name": "Mô bệnh học",
+                            "order": 0
+                        },
+                        {
+                            "id": 81,
+                            "name": "TBH",
+                            "order": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "dataCount": 0,
+    "status": 1,
+    "message": "List Area"
+}

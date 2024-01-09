@@ -1,0 +1,60 @@
+$backGroundColor: #1a1835;
+$color1:#faad14;
+.TreeView{
+    background-color:$backGroundColor;
+    width: 240px;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    color: white;
+          overflow: auto;
+      &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $backGroundColor;
+        border-radius: 3px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $backGroundColor;
+    }
+    &:hover {
+        &::-webkit-scrollbar-thumb {
+            background: gray;
+        }
+    }
+    
+}
+.TreeView-hover{
+    cursor: pointer;
+}
+.TreeView_flexRow{
+    display: flex;
+    align-items: center;
+}
+.plusPlus+.plusPlus{
+    margin-top: 5px;
+}
+
+.TreeView_checkbox{
+    background-color: $color1;
+}
+.input[type="checkbox"]:checked {
+    background-color: $color1 !important;
+}
+.TreeView_content1{
+
+    width: 100%;
+    height: auto;
+  
+}
+.checkbox{
+:where(.css-dev-only-do-not-override-dkbvqv).ant-checkbox-checked .ant-checkbox-inner {
+    background-color: $color1;
+    border-color: $color1;
+}
+.ant-checkbox-checked:hover .ant-checkbox-inner {
+  background-color: $color1;
+  border-color: $color1;
+}
+}
