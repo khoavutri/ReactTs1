@@ -29,7 +29,7 @@ const App = () => {
     <ErrorBoundry>
       <I18nextProvider i18n={i18n}>
         <div className="App" data-theme={theme}>
-        <LoadingBar /> <TreeView /><NavBar/><PatientInfomation/>
+        <LoadingBar /> <TreeView /><NavBar/><PatientInfomation />
          </div>
       </I18nextProvider>
     </ErrorBoundry>
