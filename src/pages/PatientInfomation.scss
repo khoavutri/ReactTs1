@@ -1,10 +1,82 @@
+$backGroundColor: white;
+$stikyColor: #e3e2ec;
 .gutter-vertical {
   cursor: pointer;
 }
 
 .gutter-horizontal {
   cursor: pointer;
-//   align-items: ;
+}
+p {
+  font-size: 13px;
+  strong {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+.Patient-Tren {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $backGroundColor;
+    border-radius: 3px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $backGroundColor;
+  }
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: gray;
+    }
+  }
+}
+.Patient-ngangvip {
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+    border-radius: 3px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: #bdc1c5;
+    }
+  }
+}
+.PaternTopLeft-table {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  tr {
+    cursor: pointer;
+  }
+  th,
+  td {
+    border: 0.3px solid gray;
+    padding: 8px;
+    text-align: left;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  td:nth-child(1),
+  th:nth-child(1) {
+    width: 70px;
+  }
 
-
+  th {
+    background-color: $stikyColor;
+  }
+}
+.PaternTopLeft_table-tr:hover {
+  background-color: #999999;
+}
+.PaternTopLeft_table-tr-deu{
+  background-color: #999999;
 }
