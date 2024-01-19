@@ -1,4 +1,4 @@
-import data from '../mocks/data.json';
+import data from '../../../mocks/data.json';
 import './treeview.scss';
 import { IoIosArrowForward, IoIosArrowDown } from 'react-icons/io';
 import { FaHouseMedical } from 'react-icons/fa6';
@@ -29,7 +29,7 @@ const TreeView = ({}: Props) => {
   const [sever, setSever] = useState<Array<number>>([]);
   const [choseAll, setChoseAll] = useState(false);
   const [showList, setShowList] = useState(true);
-  const locChuoi = (inputString: string, maxLength: number) => {
+  const filterString = (inputString: string, maxLength: number) => {
     if (inputString.length <= maxLength) {
       return inputString;
     } else {
@@ -252,34 +252,48 @@ const TreeView = ({}: Props) => {
   return (
     <div className='TreeView'>
       <div style={{ width: '100%', position: 'relative' }}>
-        <div style={{ width: '100%', position: 'sticky', top: '0', 
-        backgroundColor: backGroundColor, zIndex: '1' }}>
-          <div style={{ display: 'flex', justifyContent: 'center', 
-          alignItems: 'center', marginTop: '8px', textAlign: 'center' }}>
-            <img src='https://img.upanh.tv/2024/01/08/logo.png' 
-            style={{ width: '40px', height: '40px', borderRadius: '50%', marginRight: '10px' }} />
+        <div style={{ width: '100%', position: 'sticky', top: '0', backgroundColor: backGroundColor, zIndex: '1' }}>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginTop: '8px',
+              textAlign: 'center',
+            }}
+          >
+            <img
+              src='https://telerad.vn:8887/Content/logo/logo.jpg?v=0.939125665445917'
+              style={{ width: '40px', height: '40px', borderRadius: '50%', marginRight: '10px' }}
+            />
 
             <span>KHOA-RISS</span>
           </div>
           <button
-            style={{ width: '100%', height: '35px', 
-            backgroundColor: '#1f1c43', 
-            border: '0.5px solid #373469', 
-            marginTop: '5px' }}
+            style={{
+              width: '100%',
+              height: '35px',
+              backgroundColor: '#1f1c43',
+              border: '0.5px solid #373469',
+              marginTop: '5px',
+            }}
             className='TreeView-hover'
             onClick={() => {
               setShowList((prev) => !prev);
             }}
-          >DANH SÁCH MÁY 0-0
+          >
+            DANH SÁCH MÁY 0-0
           </button>
           <div>
-            <div className='TreeView_flexRow plusPlus' 
-            style={{ marginTop: '5px', marginLeft: '16px', 
-            display: showList ? '' : 'none' }}>
-              <FaHouseMedical 
-              style={{ marginRight: '10px', 
-              width: '24px', height: '24px', color: colorIcon }} 
-              className='TreeView-hover' onClick={() => showAllList()} />
+            <div
+              className='TreeView_flexRow plusPlus'
+              style={{ marginTop: '5px', marginLeft: '16px', display: showList ? '' : 'none' }}
+            >
+              <FaHouseMedical
+                style={{ marginRight: '10px', width: '24px', height: '24px', color: colorIcon }}
+                className='TreeView-hover'
+                onClick={() => showAllList()}
+              />
               <span onClick={() => showAllList()}>All</span>
             </div>
           </div>
@@ -303,10 +317,11 @@ const TreeView = ({}: Props) => {
                     }}
                   />
                 )}
-                <FaHouseMedical 
-                style={{ marginRight: '10px', width: '24px', 
-                height: '24px', color: colorIcon }} 
-                className='TreeView-hover' onClick={() => setFullEntries(index1)} />
+                <FaHouseMedical
+                  style={{ marginRight: '10px', width: '24px', height: '24px', color: colorIcon }}
+                  className='TreeView-hover'
+                  onClick={() => setFullEntries(index1)}
+                />
                 <span onClick={() => selectOnlyEntries(index1)}>{data.data[index1].name}</span>
               </div>
               {da.show && (
@@ -329,23 +344,31 @@ const TreeView = ({}: Props) => {
                           />
                         )}
 
-                        <FaFolder 
-                        style={{ width: '21px', height: '21px', 
-                        color: colorIcon, marginRight: '5px' }} 
-                        onClick={() => chonFullFolder(index1, index2)} />
+                        <FaFolder
+                          style={{ width: '21px', height: '21px', color: colorIcon, marginRight: '5px' }}
+                          onClick={() => chonFullFolder(index1, index2)}
+                        />
                         <span onClick={() => chonOnlyFolder(index1, index2)}>
-                          {locChuoi(data.data[index1].folder[index2].name, 12)}</span>
+                          {filterString(data.data[index1].folder[index2].name, 12)}
+                        </span>
                       </div>
                       {ou.show && (
                         <>
                           {ou.modalitys.map((x, index3) => (
-                            <label key={index3} className='TreeView_flexRow T
-                            reeView-hover TreeView_hover' 
-                            style={{ marginLeft: '70px', marginTop: '3px' }}>
-                              <Checkbox className='checkbox' checked={x.show} 
-                              onClick={() => setChonModalitys(index1, index2, index3)} />
-                              <span onClick={() => selectOnly(index1, index2, index3)}>
-                                {locChuoi(data.data[index1].folder[index2].modalitys[index3].name, 12)}</span>
+                            <label
+                              key={index3}
+                              className='TreeView_flexRow T
+                            reeView-hover TreeView_hover'
+                              style={{ marginLeft: '70px', marginTop: '3px' }}
+                            >
+                              <Checkbox
+                                className='checkbox'
+                                checked={x.show}
+                                onClick={() => setChonModalitys(index1, index2, index3)}
+                              />
+                              <span onClick={() => selectOnly(index1, index2, index3)} style={{ marginLeft: '5px' }}>
+                                {filterString(data.data[index1].folder[index2].modalitys[index3].name, 12)}
+                              </span>
                             </label>
                           ))}
                         </>

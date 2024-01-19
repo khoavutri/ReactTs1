@@ -1,0 +1,119 @@
+$backGroundColor: #1a1835;
+.NavBar-config > * {
+  margin-right: 5px;
+}
+.NavBar_func {
+  text-wrap: nowrap;
+}
+.NavBar_func-item {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.NavBar_DatePicker-config {
+  height: 24px;
+  background-color: $backGroundColor;
+  outline: none;
+  border: 0.1px white solid;
+}
+input[type='date']::-webkit-calendar-picker-indicator {
+  color: white;
+}
+
+input[type='date']::-moz-calendar-picker-indicator {
+  color: white;
+}
+.NavBar_func-icon {
+  background-color: $backGroundColor;
+  height: 24px;
+  width: 28px;
+  border: 0.1px solid white;
+  padding: 0;
+  background: none;
+}
+.NavBar_func-iconnn {
+  background-color: $backGroundColor;
+  height: 24px;
+  width: 28px;
+  border: 0.1px solid white;
+  padding: 0;
+  background: none;
+}
+.NavBar-full {
+  overflow: hidden;
+}
+.Height-Patient {
+  height: calc(100vh - 40px);
+}
+@media (min-width: 1308px) {
+  .NavBar-config {
+    flex-wrap: nowrap;
+  }
+  .NavBar-full {
+    height: 40px;
+  }
+}
+.NavBar_func--anHien {
+  display: none;
+}
+@media ((min-width: 1056px) and (max-width: 1308px)) {
+  .NavBar-config {
+    flex-wrap: wrap;
+  }
+  .Height-Patient {
+    height: calc(100vh - 72px);
+  }
+  .NavBar-full {
+    height: 72px;
+  }
+  .NavBar_func {
+    margin-top: 5px;
+  }
+  .NavBar_func--anHien {
+    display: block;
+  }
+}
+@media ((max-width: 1056px)) {
+  .NavBar-config {
+    flex-wrap: wrap;
+  }
+  .Height-Patient {
+    height: calc(100vh - 106px);
+  }
+  .NavBar_func {
+    margin-top: 5px;
+  }
+  .NavBar_func-icon {
+    margin-top: 5px;
+  }
+
+  .NavBar_func--anHien {
+    display: block;
+  }
+  .NavBar-full {
+    height: 106px;
+  }
+}
+.custom-date-input {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-date-input input[type='date'] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: #333;
+  outline: none;
+}
+
+.custom-date-input::before {
+  content: '\f073';
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #fff;
+}

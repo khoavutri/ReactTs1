@@ -1,0 +1,92 @@
+$backGroundColor: #1a1835;
+.PatientTopLeft_handle {
+  background-color: white;
+  .container {
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 7px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $backGroundColor;
+      border-radius: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      background: $backGroundColor;
+    }
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background: gray;
+      }
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 0.4px solid #ddd;
+    &::-webkit-scrollbar {
+      width: 2px;
+      height: 2px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $backGroundColor;
+      border-radius: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      background: $backGroundColor;
+    }
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background: gray;
+      }
+    }
+    // overflow: auto;
+  }
+
+  th,
+  td {
+    border: 0.4px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    color: black;
+    height: 35px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    input {
+      border-radius: 0%;
+    }
+  }
+  .PatientTopLeft_Table-Tr {
+    background-color: white;
+    &:hover {
+      background-color: #999999;
+    }
+  }
+  .PatientTopLeft_Table-Trr {
+    background-color: #999999;
+  }
+  .cam-false {
+  }
+  .cam-true {
+    color: red;
+    transform: scale(1.1);
+  }
+  .Table_DraggableColumnHeader {
+    background-color: rgba(0, 0, 0, 0.01);
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  :where(.css-dev-only-do-not-override-dkbvqv).ant-select-single .ant-select-selector {
+    border-radius: 0;
+  }
+}

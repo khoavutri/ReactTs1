@@ -53,6 +53,7 @@ p {
   table {
     border-collapse: collapse;
     width: 100%;
+    border: 0.3px solid gray;
   }
   tr {
     cursor: pointer;
@@ -77,6 +78,59 @@ p {
 .PaternTopLeft_table-tr:hover {
   background-color: #999999;
 }
-.PaternTopLeft_table-tr-deu{
+.PaternTopLeft_table-tr-deu {
   background-color: #999999;
+}
+.PaternTopLeft_table-setAn {
+  position: relative;
+  &:hover {
+    .PaternTopLeft_table-an {
+      display: flex;
+    }
+  }
+}
+.PaternTopLeft_table-an {
+  z-index: 10000;
+  display: none;
+  position: absolute;
+  // top:12px;
+  flex-direction: column;
+  border-radius: 3px;
+  padding: 10px 10px;
+  // left: -30px;
+}
+.PaternTopLeft_table-an-con {
+  &:hover {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+  }
+}
+.PatientBottomRight-button {
+  height: 25px;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.PatientBottomRight-button + .PatientBottomRight-button {
+  margin-left: 5px;
+}
+.PatientBottomRight {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $backGroundColor;
+    border-radius: 3px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $backGroundColor;
+  }
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: gray;
+    }
+  }
 }

@@ -1,24 +1,24 @@
-import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { AUTHORITIES } from '../../constants/constants'
+import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { AUTHORITIES } from '../../constants/constants';
 // import axios from 'axios'
-import { defaultAuth, IAuth } from '../../models/reducers/auth.model'
+import { defaultAuth, IAuth } from '../../models/reducers/auth.model';
 
-const initialState: IAuth = defaultAuth
+const initialState: IAuth = defaultAuth;
 
 export const authenticate = createAsyncThunk('auth/login', async () => {
   return new Promise<any>((_resolve, reject) => {
     setTimeout(() => {
-      reject(123)
-    }, 3000)
-  })
-})
+      reject(123);
+    }, 3000);
+  });
+});
 
 const authSlice = createSlice({
   name: 'auth',
   initialState,
   reducers: {
     setAuthentication(state, action: PayloadAction<boolean>) {
-      state.isAuthenticated = action.payload
+      state.isAuthenticated = action.payload;
     },
   },
   extraReducers(builder) {
@@ -38,9 +38,9 @@ const authSlice = createSlice({
       .addCase(authenticate.pending, (state) => ({
         ...state,
         loading: true,
-      }))
+      }));
   },
-})
+});
 
-export const { setAuthentication } = authSlice.actions
-export default authSlice.reducer
+export const { setAuthentication } = authSlice.actions;
+export default authSlice.reducer;
